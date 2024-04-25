@@ -1,51 +1,26 @@
-import { GoBell, GoCloud, GoDatabase } from 'react-icons/go';
-import { FaBeer } from 'react-icons/fa';
-import Button from './Button';
+import Accordion from './components/Accordion';
 
 function App() {
-  const handleClick = () => {
-    console.log('Clicked!');
-  };
 
-  return (
-    <div>
-      <div>
-        <Button
-          secondary
-          outline
-          rounded
-          className="mb-5"
-          onClick={handleClick}
-        >
-          <GoBell />
-          Click me!!
-        </Button>
-      </div>
-      <div>
-        <Button danger outline onMouseEnter={handleClick}>
-          <GoCloud />
-          Buy Now!
-        </Button>
-      </div>
-      <div>
-        <Button warning onMouseLeave={handleClick}>
-          <GoDatabase />
-          See Deal!
-        </Button>
-      </div>
-      <div>
-        <Button secondary outline>
-            <FaBeer />
-          Hide Ads!
-        </Button>
-      </div>
-      <div>
-        <Button primary rounded>
-          Something!
-        </Button>
-      </div>
-    </div>
-  );
+  const items = [
+    {
+      id: 'arguments',
+      label: 'react on Proj',
+      content: ' you can'
+    },
+    {
+      id: 'bay',
+      label: 'react on Proj',
+      content: ' you can'
+    },
+    {
+      id: 'kakao',
+      label: 'react on Proj',
+      content: ' you can'
+    }
+    
+  ]
+  return <Accordion items={items}/>
 }
 
 export default App;
