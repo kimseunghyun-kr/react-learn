@@ -11,9 +11,19 @@ function useCounter(initialCount) {
     setCount(count + 1);
   };
 
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  const multiAdd = (number) => {
+    setCount(count + number);
+  };
+
   return {
     count,
     increment,
+    decrement,
+    multiAdd
   };
 }
 
