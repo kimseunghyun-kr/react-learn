@@ -3,6 +3,7 @@ import { removeCar } from '../store';
 
 function CarList() {
   const dispatch = useDispatch();
+  // derived state goes well with the useSelector function
   const { cars, name } = useSelector(({ form, cars: { data, searchTerm } }) => {
     const filteredCars = data.filter((car) =>
       car.name.toLowerCase().includes(searchTerm.toLowerCase())
