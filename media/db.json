@@ -1,18 +1,63 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Myra"
-      },
-      {
-        "name": "Elsie Price",
-        "id": 3
-      },
-      {
-        "name": "Harold Strosin",
-        "id": 4
-      }
-    ],
-    "albums": [],
-    "photos": []
-  }
+  "users": [
+    {
+      "name": "Harold Strosin",
+      "id": "4"
+    },
+    {
+      "id": "d9f5",
+      "name": "Ms. Tommie Walter"
+    },
+    {
+      "id": "eedc",
+      "name": "Carl Abernathy II"
+    },
+    {
+      "id": "5fcc",
+      "name": "Rosa Lakin"
+    },
+    {
+      "id": "a57b",
+      "name": "Sandy Blick"
+    }
+  ],
+  "albums": [
+    {
+      "id": "10",
+      "title": "Hiking Trip",
+      "userId": 3
+    },
+    {
+      "id": "123a",
+      "userId": null,
+      "title": "Handmade Steel Salad"
+    },
+    {
+      "id": "fb88",
+      "userId": null,
+      "title": "Intelligent Plastic Keyboard"
+    },
+    {
+      "id": "9cb2",
+      "userId": "a57b",
+      "title": "Luxurious Plastic Chips"
+    },
+    {
+      "id": "ba63",
+      "userId": "4",
+      "title": "Refined Fresh Cheese"
+    }
+  ],
+  "photos": [
+    {
+      "id": "8414",
+      "albumId": "ba63",
+      "url": "https://loremflickr.com/150/150/abstract?lock=85653"
+    },
+    {
+      "id": "24c7",
+      "albumId": "ba63",
+      "url": "https://loremflickr.com/150/150/abstract?lock=64002"
+    }
+  ]
+}
